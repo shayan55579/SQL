@@ -1,0 +1,74 @@
+create database zendan 
+
+create table jorm (
+	   onvanejorm nvarchar(30) not null,
+	   codjorm nchar(50) not null,
+	   mizanehabs nchar(50),
+           mizaneshalagh nchar(50),
+
+)
+
+create table zendan (
+       adreszendan nvarchar(max) not null,
+	   namzendan nvarchar(30) not null,
+	   tedadzendani nchar(50) ,
+	   tedadprsonel nchar(50),
+           codzendan nchar(50) primary key,
+
+)
+
+create table zendani (
+	   namzendani nvarchar(30) not null,
+	   familzendani nvarchar(50) not null,
+           nampedar nvarchar(50),
+	   codmelizendani nchar(20) primary key,
+           tarikhtavalod nvarchar(50),
+           jorm nvarchar(50),
+           sabeghe nvarchar(50),
+           shomareparvande nchar(50),
+
+
+
+)
+
+create table personel (
+	   nampresonel nvarchar(30) not null,
+	   familpersonel nvarchar(50) not null,
+	   semat nvarchar(50),
+           codmelipresonel nchar(50) primary key,
+           codpersoneli nchar(50),
+
+
+)
+
+insert into zendan values  
+(N'تهران-البرز',N'ازاد',N'100',N'305',N'333'),
+(N'تهران-کرج',N'حشمتیه',N'200',N'200',N'322'),
+(N'شیراز',N'شیراز',N'450',N'180',N'123'),
+(N'شهرکرد',N'مرکزی',N'333',N'214',N'444'),
+(N'تهران-ورامین',N'مرکزی بزرگ',N'500',N'300',N'577'),
+(N'تهران-ورامین',N'خورین',N'444',N'220',N'722'),
+(N'تهران-ورامین',N'فشافویه',N'676',N'234',N'888'),
+(N'البرز',N'قزلحصار',N'2000',N'1200',N'999'),
+(N'کرج',N'رجایی',N'444',N'234',N'156'),
+(N'شهر ری',N'شهرری',N'250',N'100',N'230'),
+(N'دماوند',N'دامی',N'389',N'123',N'743'),
+(N'شیراز- بلوارعدالت جنوبی- ',N'اداره کل زندان ها',N'45',N'100',N'111'),
+(N'داراب، شهرک ثارالله',N'داراب',N'890',N'900',N'071'),
+(N'استهبان، انتهای بلوار امام رضا',N'اشتهبان',N'342',N'165',N'081'),
+(N'نی ریز، انتهای بلوار میرزا کوچک خان',N'نیریز',N'456',N'222',N'788'),
+(N'لارستان،کیلومتر ۶ جاده گراش',N'لارستان',N'600',N'400',N'091'),
+(N'جهرم، بعد از بیمارستان پیمانیه',N'جهرم',N'456',N'287',N'072'),
+(N'فیروزآباد، ابتدای بلوار دانشگاه آزاد اسلامی',N'فیروزاباد',N'123',N'544',N'012'),
+(N'قیرکارزین، جاده هنگام بعد از دانشگاه پیام نور',N'قیر',N'563',N'123',N'065'),
+(N'	کازرون، کیلومتر ۵ جاده دوان',N'کازرون',N'345',N'123',N'045'),
+(N'	نور آباد،کیلومتر ۵ جاده شیراز',N'ممسنی',N'800',N'1987',N'129'),
+(N'شیراز، بلوار عدالت جنوبی',N'مرکزی شیراز',N'342',N'654',N'102'),
+(N'شیراز، بلوار رحمت،',N'شماره ۲ شیراز',N'432',N'450',N'098'),
+(N'	آباده، خیابان امام خمینی',N'اباده',N'153',N'301',N'523'),
+(N'اقلید، میدان حسین آباد',N'اقلید',N'115',N'430',N'595'),
+(N'مرودشت،۶۰ متری، جاده دولت آباد',N'مرودشت',N'135',N'3120',N'789'),
+(N'شیراز_ بلوار امیرکبیر-',N'شماره8',N'115',N'330',N'690'),
+(N'قم',N'لنگرود',N'765',N'865',N'515'),
+(N'مشهد',N'مرکزی',N'134',N'123',N'042'),
+(N'تهران',N'قزل قلعه',N'197',N'546',N'603');
